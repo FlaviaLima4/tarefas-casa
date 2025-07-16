@@ -3,6 +3,11 @@
 // Configuração da API
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000/api';
 
+// Debug: mostrar qual URL está sendo usada
+console.log('🌐 API Base URL:', API_BASE_URL);
+console.log('🔧 Environment:', import.meta.env.MODE);
+console.log('📍 VITE_API_URL:', import.meta.env.VITE_API_URL);
+
 // Configurações para retry e timeout
 const API_CONFIG = {
   timeout: 15000, // 15 segundos
